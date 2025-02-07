@@ -35,13 +35,8 @@ password-generator
     │   └── java
     │       └── com
     │           └── example
-    │               ├── PasswordGenerator.java   <+ add this here.
-    │               └── App.java
+    │               └── PasswordGenerator.java   <+ add file here
     └── test
-	└── java
-            └── com
-                └── example
-                    └── AppTest.java
 ```
 
 3. Write "PasswordGenerator.java" on VS Code.
