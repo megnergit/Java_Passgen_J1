@@ -12,19 +12,22 @@ The generator is supposed to be secure, as it uses "system entropy" as a
 seed of the random number generation. 
 
 ## Procedure
-1. Create a project with Maven
+1. Create a project with Maven.
 
+```
 mvn archetype:generate \
     -DgroupId=com.example \
     -DartifactId=password-generator \
     -DarchetypeArtifactId=maven-archetype-quickstart \
     -DinteractiveMode=false
+```
 
 groupId    : project organization name (="com.example")
 artifactId : project name (="password-generator")
 
 2. Directory structure is now like this.
 
+```
 password-generator
 ├── pom.xml
 └── src
@@ -39,11 +42,14 @@ password-generator
             └── com
                 └── example
                     └── AppTest.java
+```
 
-3. Write "PasswordGenerator.java" on VS Code (ChatGPT provided it)
+3. Write "PasswordGenerator.java" on VS Code.
+ChatGPT provided it.
 
-4. Edit pom.xml to add the main class
+4. Edit pom.xml to add the main class.
 
+```
 <build>
     <plugins>
 	<plugin>
@@ -60,20 +66,30 @@ password-generator
 	</plugin>
     </plugins>
 </build>
+```
 
 5. Build and package everything in one command:
+```
 $ mvn clean package
+```
 
 6. Rename the generated JAR (optional, but cleaner):
+
+```
 $ mv target/password-generator-1.0-SNAPSHOT.jar target/passgen.jar
+```
 
-7. Add alias in ~/.zshrc
-alias passgen="java -jar $HOME/java/j2/password-generator/target/password-generator-1.0-SNAPSHOT.jar
+7. Add alias in ```~/.zshrc```.
 
-8. Test it
+```alias passgen="java -jar $HOME/java/j2/password-generator/target/password-generator-1.0-SNAPSHOT.jar
+```
+8. Test it.
+
+```
 $ source ~/.zshrc
 $ passgen
 Generated Password: OTPcM-OtEHD-U4Kxs-WZMVi-X3ayd
+```
 
 Yeahaa-
 
