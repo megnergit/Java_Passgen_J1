@@ -76,7 +76,8 @@ $ mv target/password-generator-1.0-SNAPSHOT.jar target/passgen.jar
 
 7. Add alias in ```~/.zshrc```.
 
-```alias passgen="java -jar $HOME/java/j2/password-generator/target/password-generator-1.0-SNAPSHOT.jar
+```
+alias passgen="java -jar $HOME/java/j2/password-generator/target/password-generator-1.0-SNAPSHOT.jar
 ```
 8. Test it.
 
